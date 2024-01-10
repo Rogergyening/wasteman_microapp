@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -54,11 +54,11 @@ body {
 
 .container .card-body .btn.btn-primary .fab.fa-cc-paypal {
     font-size: 32px;
-    color: #3333f7;
+    color:  rgb(13, 165, 109);;
 }
 
 .fab.fa-cc-amex {
-    color: #1c6acf;
+    color: rgb(13, 165, 109);;
     font-size: 32px;
 }
 
@@ -86,8 +86,7 @@ body {
 }
 
 .btn.btn-primary.payment {
-    background-color: #1c6acf;
-    color: white;
+    background: rgb(13, 165, 109);    
     border-radius: 0px;
     height: 50px;
     display: flex;
@@ -130,7 +129,7 @@ body {
 .form-control:focus+.form__label {
     top: -8px;
     left: 12px;
-    color: #1A73E8;
+    color: rgb(13, 165, 109);
     font-size: 12px;
     font-weight: 500;
     z-index: 10;
@@ -145,6 +144,6 @@ body {
 }
 
 .form-control:focus {
-    border: 1.5px solid #1A73E8;
+    border: 1.5px solid  rgb(13, 165, 109);;
     box-shadow: none;
 }
