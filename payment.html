@@ -242,5 +242,39 @@
     </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script> 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+   - Additional script for handling MTN Mobile Money payment -->
+<script>
+    // This function handles the MTN Mobile Money payment
+    function makeMTNMobileMoneyPayment() {
+        // Fetch the form data
+        var formData = {
+            name: $('#mtnMobileMoneyForm input[name="name"]').val(),
+            phoneNumber: $('#mtnMobileMoneyForm input[name="phoneNumber"]').val(),
+            reference: $('#mtnMobileMoneyForm input[name="reference"]').val(),
+            // Add other necessary form data
+        };
+
+        // Make an AJAX request to your server to initiate the payment using the MTN MoMo Pay API
+        $.ajax({
+            type: 'POST',
+            url: 'your_server_endpoint_for_mtn_payment',
+            data: JSON.stringify(formData),
+            contentType: 'application/json',
+            success: function (response) {
+                // Handle the success response
+                console.log('Payment initiated successfully:', response);
+            },
+            error: function (error) {
+                // Handle the error response
+                console.error('Error initiating payment:', error);
+            }
+        });
+    }
+
+    // Attach a click event listener to the "Make Payment" button
+    $('#makePaymentBtn').on('click', function () {
+        makeMTNMobileMoneyPayment();
+    });
+</script>
 </body>
 </html>
