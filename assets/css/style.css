@@ -983,7 +983,7 @@ section {
   justify-content: center;
 }
 .team .member .social a:hover {
-  background: #fc8129;
+  background: rgb(13, 165, 109);
 }
 .team .member .social i {
   font-size: 18px;
@@ -1052,7 +1052,7 @@ section {
   margin-top: 40px;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #ef6603;
+  background: rgb(13, 165, 109);
   color: #fff;
 }
 .contact .php-email-form {
