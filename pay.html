@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Payment page || Wasteman Ghana</title>
+
+    <!-- Include Paystack Script -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <!-- Other CSS and Vendor Files (Keep these as needed) -->
+    <!-- ... -->
+
+</head>
+
+<body>
+
+    <!-- Header Section (Keep this as needed) -->
+    <!-- ... -->
+
+    <main id="main">
+
+        <!-- Breadcrumbs Section (Keep this as needed) -->
+        <!-- ... -->
+
+        <!-- Payment Methods Section -->
+        <div class="container">
+            <!-- ... Your other payment methods ... -->
+
+            <!-- Paystack Payment Form -->
+            <div class="col-12">
+                <div class="card p-3">
+                    <div class="card-body border p-0">
+                        <p>
+                            <a class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-between"
+                                data-bs-toggle="collapse" href="#paystackForm" role="button" aria-expanded="true"
+                                aria-controls="paystackForm">
+                                <span class="fw-bold">Pay with Paystack</span>
+                                <span class="fab fa-paypal"></span>
+                            </a>
+                        </p>
+                        <div class="collapse p-3 pt-0" id="paystackForm">
+                            <form id="paymentForm">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="amount">Amount</label>
+                                    <input type="number" class="form-control" id="paystackAmount" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" class="form-control" id="paystackFirstName" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="paystackLastName" />
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary" onclick="payWithPaystack()"> Pay
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Scripts (Keep these as needed) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            // Your existing script for MTN Mobile Money payment
+            function makeMTNMobileMoneyPayment() {
+                // ... (keep your existing logic here)
+            }
+
+            // This function handles the Paystack payment
+            function payWithPaystack() {
+                var email = $('#paystackForm #email').val();
+                var amount = $('#paystackForm #paystackAmount').val();
+                var firstName = $('#paystackForm #paystackFirstName').val();
+                var lastName = $('#paystackForm #paystackLastName').val();
+
+                // Use Paystack's inline API to initiate payment
+                var handler = PaystackPop.setup({
+                    key: 'YOUR_PAYSTACK_PUBLIC_KEY',
+                    email: email,
+                    amount: amount * 100, // Convert amount to kobo (Paystack's base unit)
+                    ref: 'paystack_' + Math.floor((Math.random() * 1000000000) + 1), // Unique reference
+                    firstname: firstName,
+                    lastname: lastName,
+                    // Add other necessary parameters as needed
+                    callback: function (response) {
+                        // Handle successful payment
+                        console.log('Payment successful:', response);
+                    },
+                    onClose: function () {
+                        // Handle payment closed
+                        console.log('Payment closed');
+                    }
+                });
+                handler.openIframe();
+            }
+        </script>
+</body>
+
+</html>
