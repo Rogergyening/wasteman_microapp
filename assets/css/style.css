@@ -1317,12 +1317,12 @@ section {
 }
 
 .why-us .icon-box .icon i {
-  color: #68A4C4;
+  color: #069470;
   font-size: 32px;
 }
 
 .why-us .icon-box:hover .icon {
-  background: #68A4C4;
+  background: #069470;
 }
 
 .why-us .icon-box:hover .icon i {
@@ -1343,7 +1343,7 @@ section {
 }
 
 .why-us .icon-box .title a:hover {
-  color: #68A4C4;
+  color: #069470;
 }
 
 .why-us .icon-box .description {

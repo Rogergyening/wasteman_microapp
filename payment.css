@@ -33,9 +33,19 @@ body {
     width: 100%;
     height: 100%;
 }
+/* .btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #069470;
+    border-color: #069470; !important
+} */
+
+.btn-primary :hover{
+     color:#069470; !important
+}
 
 .btn.btn-primary:focus {
-    box-shadow: none;
+    box-shadow: #069470;
 }
 
 .container .card .img-box {
@@ -73,7 +83,7 @@ body {
 }
 
 .c-green {
-    color: green;
+    color: #069470;
 }
 
 .box {
@@ -86,15 +96,25 @@ body {
 }
 
 .btn.btn-primary.payment {
-    background: rgb(13, 165, 109);    
+    background: #069470;    
     border-radius: 0px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 24px;
+    color: aqua;
+  
 }
-
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #069470; !important
+    background-color: #069470; !important
+    border-color: #069470;!important
+    box-shadow: 0 0 0 0.25rem #069470; !important
+    
+}
 
 .form__div {
     height: 50px;

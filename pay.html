@@ -4,108 +4,133 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Payment page || Wasteman Ghana</title>
 
-    <!-- Include Paystack Script -->
-    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <title>Paymnet page || Wasteman Ghana</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-    <!-- Other CSS and Vendor Files (Keep these as needed) -->
-    <!-- ... -->
+    <!-- Favicons -->
+    <link href="./assets/img/alpha 5-min (1).png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
 
 </head>
 
 <body>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    <!-- Header Section (Keep this as needed) -->
-    <!-- ... -->
+        <div class="logo">
 
-    <main id="main">
-
-        <!-- Breadcrumbs Section (Keep this as needed) -->
-        <!-- ... -->
-
-        <!-- Payment Methods Section -->
-        <div class="container">
-            <!-- ... Your other payment methods ... -->
-
-            <!-- Paystack Payment Form -->
-            <div class="col-12">
-                <div class="card p-3">
-                    <div class="card-body border p-0">
-                        <p>
-                            <a class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#paystackForm" role="button" aria-expanded="true"
-                                aria-controls="paystackForm">
-                                <span class="fw-bold">Pay with Paystack</span>
-                                <span class="fab fa-paypal"></span>
-                            </a>
-                        </p>
-                        <div class="collapse p-3 pt-0" id="paystackForm">
-                            <form id="paymentForm">
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" class="form-control" id="email" required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="amount">Amount</label>
-                                    <input type="number" class="form-control" id="paystackAmount" required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="first-name">First Name</label>
-                                    <input type="text" class="form-control" id="paystackFirstName" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="last-name">Last Name</label>
-                                    <input type="text" class="form-control" id="paystackLastName" />
-                                </div>
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-primary" onclick="payWithPaystack()"> Pay
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="index.html"><img src="./assets/img/alpha 5-min (1).png" alt="" class="img-fluid"></a>
+            <h1><a href="index.html">Wasteman Ghana</a></h1>
         </div>
 
-        <!-- Additional Scripts (Keep these as needed) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-            // Your existing script for MTN Mobile Money payment
-            function makeMTNMobileMoneyPayment() {
-                // ... (keep your existing logic here)
-            }
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto " href="./index.html">Home</a></li>
+                <!-- <li><a class="nav-link scrollto" href="./index.html/">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+                <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul> -->
+                <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
-            // This function handles the Paystack payment
-            function payWithPaystack() {
-                var email = $('#paystackForm #email').val();
-                var amount = $('#paystackForm #paystackAmount').val();
-                var firstName = $('#paystackForm #paystackFirstName').val();
-                var lastName = $('#paystackForm #paystackLastName').val();
+    </div>
+</header><!-- End Header -->
 
-                // Use Paystack's inline API to initiate payment
-                var handler = PaystackPop.setup({
-                    key: 'YOUR_PAYSTACK_PUBLIC_KEY',
-                    email: email,
-                    amount: amount * 100, // Convert amount to kobo (Paystack's base unit)
-                    ref: 'paystack_' + Math.floor((Math.random() * 1000000000) + 1), // Unique reference
-                    firstname: firstName,
-                    lastname: lastName,
-                    // Add other necessary parameters as needed
-                    callback: function (response) {
-                        // Handle successful payment
-                        console.log('Payment successful:', response);
-                    },
-                    onClose: function () {
-                        // Handle payment closed
-                        console.log('Payment closed');
-                    }
-                });
-                handler.openIframe();
-            }
-        </script>
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Payment Portals </h2>
+                <ol>
+
+
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+    <h2>Sign Up Form</h2>
+
+    <form action="/your-server-endpoint" method="post">
+        <label for="name">Name of Customer:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="gps">Ghana Post Code (GPS):</label>
+        <input type="text" id="gps" name="gps" required>
+
+        <label for="street">Street Name:</label>
+        <input type="text" id="street" name="street" required>
+
+        <label for="town">Town/Community:</label>
+        <input type="text" id="town" name="town" required>
+
+        <label for="customerType">Customer Type:</label>
+        <select id="customerType" name="customerType" required>
+            <option value="household">Household</option>
+            <option value="organisation">Organisation</option>
+            <option value="hostel">Hostel</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
 </body>
 
 </html>
