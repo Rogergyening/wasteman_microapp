@@ -1,13 +1,12 @@
-
 {
-    "liveServer.settings.port": 5504,
-    "cSpell.words": [
-        "appspot",
-        "firebaseapp",
-        "Lkewg",
-        "Markeinstein",
-        "Paystack",
-        "wasteman",
-        "xgkj"
-    ]
+  "liveServer.settings.port": 5505,
+  "cSpell.words": [
+    "appspot",
+    "firebaseapp",
+    "Lkewg",
+    "Markeinstein",
+    "Paystack",
+    "wasteman",
+    "xgkj"
+  ]
 }
